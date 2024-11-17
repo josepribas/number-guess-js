@@ -26,13 +26,36 @@
         }
 
         #range {
-            
+            background-color: green;
+            margin-left: 0%;
+            height: 1em;
+            width: 100%;
+        }
+
+        #input {
+            display: block;
+            font-size: 24px;
+            width: 60%;
+            padding: 5px;
+        }
+
+        #playagain {
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 
     <script defer src="app.js"></script>
 </head>
 <body>
+
+    <h1 id="heading">I'm thinking of a number between 1 and 100...</h1>
+    <div id="container">
+        <div id="range"></div>
+    </div>
+    <input id="input" type="number" placeholder="Enter your guess">
+    <button id="playagain" hidden onclick="location.search=''">Play Again</button>
     
 </body>
 </html>
